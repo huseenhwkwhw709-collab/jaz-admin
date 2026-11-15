@@ -1,0 +1,18 @@
+{
+  "id": "./index.html",
+  "name": "أدمن جاز",
+  "short_name": "أدمن جاز",
+  "description": "لوحة إدارة جاز للمنتجات والطلبات والعملاء",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html?source=admin-app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f6fa",
+  "theme_color": "#075e7a",
+  "icons": [
+    {"src": "./admin-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "./admin-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "./admin-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
