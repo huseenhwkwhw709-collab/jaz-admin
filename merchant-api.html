@@ -1,0 +1,10 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>جاز · دليل التكامل</title><link rel="stylesheet" href="./mobile.css"></head><body><main class="wrap"><h1>دليل تكامل التاجر</h1><section class="card"><p>أنشئ مفتاحاً من الإعدادات ← ربط متجري عبر API. يُعرض مرة واحدة. احفظه في أسرار خادم موقعك، ويمكن إلغاؤه من التطبيق. لا تستخدم مفتاح موظف أو مفتاح Convex إداري.</p><p>عنوان الخدمة يزوّدك به مسؤول المشروع حسب البيئة، ثم المسار <code dir="ltr">/merchant/v1/</code>. بيئة التطوير مستقلة عن الإنتاج.</p><p>أرسل الترويسة <code dir="ltr">Authorization: Bearer YOUR_SECRET_KEY</code>. لا تضع المفتاح في الرابط أو في JavaScript عام.</p><ul><li><code dir="ltr">GET products</code>: المنتجات والأسعار والمخزون المسموح للتاجر.</li><li><code dir="ltr">GET categories</code>: التصنيفات.</li><li><code dir="ltr">POST orders</code>: إنشاء طلب يخص صاحب المفتاح؛ يتطلب صلاحية إنشاء الطلبات.</li></ul><p>لإنشاء الطلب أرسل ترويسة <code dir="ltr">Idempotency-Key</code> بقيمة مستقرة فريدة من 8–60 حرفاً إنكليزياً أو رقماً أو شرطة. أعد نفس المفتاح عند إعادة المحاولة حتى لا يتكرر الطلب. الحد الحالي 100 طلب في يوم بغداد لكل مفتاح.</p><pre dir="ltr" style="overflow:auto">{
+ "customerName": "مشتري تجريبي",
+ "phone": "07000000000",
+ "province": "PROVINCE_ID",
+ "region": "المنطقة",
+ "address": "تفاصيل العنوان",
+ "items": [{"product":"PRODUCT_ID","qty":1,"salePrice":20000}],
+ "returnGuarantee": false,
+ "shippingFromProfit": false
+}</pre><p>الخادم يتحقق من هوية صاحب المفتاح والمخزون وحدود السعر والمحافظة. لا ترسل مجموعاً أو رصيداً أو هوية تاجر محسوبة عندك. عند الاستجابة غير المؤكدة أعد المحاولة بالمفتاح نفسه. الإلغاء أو تعديل الحالات ليسا متاحين عبر هذا الإصدار من API.</p><p>النجاح يعيد رقم الطلب وتفاصيله. الأخطاء: 401 مفتاح غير صالح أو صلاحية غير كافية، 400 بيانات غير صالحة، 429 تجاوز حد الاستخدام. الاستجابة لا تعني وصول البضاعة أو قبول دفع مالي.</p></section></main></body></html>
