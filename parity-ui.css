@@ -49,3 +49,5 @@ body[data-scope=customer] .ref-banner{width:calc(100% - 8px);border:0;text-align
 body[data-scope=customer] .launch-logo,body[data-scope=customer] .launch-logo img{border-radius:0}
 
 .ref-profile-profits .ref-wallet-available{grid-column:1/-1;background:#dceff1;color:#075e7a}.ref-profile-profits .ref-wallet-available b{font-size:28px}.ref-wallet-note{grid-column:1/-1;color:var(--soft-ink);font-size:11px;line-height:1.9;margin:0}.dark .ref-profile-profits .ref-wallet-available{background:#234550;color:#d5f4fa}
+
+.ref-password-hint{display:block;font-size:11px;color:var(--soft-ink);margin-top:5px}
