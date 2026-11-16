@@ -43,3 +43,5 @@ dialog{border:1px solid #dce7ee;border-radius:20px;max-height:91dvh;box-shadow:0
 @media print{.admin-mobile-nav,.admin-install-button{display:none!important}}
 
 body[data-scope=admin],body[data-scope=admin] *{font-style:normal;font-synthesis:none;font-variation-settings:"slnt" 0}
+
+.admin-order-phones{display:flex;flex-direction:column;align-items:flex-start;gap:4px}.admin-order-phones small{color:var(--admin-muted);font-size:10px}.admin-order-phone{display:inline-block;direction:ltr;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--admin-blue);text-decoration:underline;text-underline-offset:3px}.admin-order-phone:focus-visible{outline:2px solid var(--admin-blue);outline-offset:3px}
