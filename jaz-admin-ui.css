@@ -45,3 +45,7 @@ dialog{border:1px solid #dce7ee;border-radius:20px;max-height:91dvh;box-shadow:0
 body[data-scope=admin],body[data-scope=admin] *{font-style:normal;font-synthesis:none;font-variation-settings:"slnt" 0}
 
 .admin-order-phones{display:flex;flex-direction:column;align-items:flex-start;gap:4px}.admin-order-phones small{color:var(--admin-muted);font-size:10px}.admin-order-phone{display:inline-block;direction:ltr;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--admin-blue);text-decoration:underline;text-underline-offset:3px}.admin-order-phone:focus-visible{outline:2px solid var(--admin-blue);outline-offset:3px}
+
+.admin-payout-account{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.admin-payout-account bdi{font-variant-numeric:tabular-nums;overflow-wrap:anywhere;max-width:100%}
+
+.notification-guide{line-height:2;padding-inline-start:24px;color:var(--admin-muted);font-size:13px}.notification-guide li+li{margin-top:6px}
