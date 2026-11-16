@@ -1,1 +1,26 @@
-{"id": "./mobile.html", "name": "جاز", "short_name": "جاز", "lang": "ar", "dir": "rtl", "start_url": "./mobile.html", "scope": "./", "display": "standalone", "background_color": "#020e1c", "theme_color": "#020e1c", "icons": [{"src": "./brand-logo-yellow.jpg", "sizes": "1280x1280", "type": "image/jpeg", "purpose": "any"}, {"src": "./icon-maskable.svg?v=yellow", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable"}]}
+{
+  "id": "./mobile.html",
+  "name": "جاز",
+  "short_name": "جاز",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./mobile.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#020e1c",
+  "theme_color": "#020e1c",
+  "icons": [
+    {
+      "src": "./jaz-blue-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./jaz-blue-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
