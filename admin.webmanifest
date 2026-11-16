@@ -1,8 +1,8 @@
 {
   "id": "./index.html",
-  "name": "أدمن جاز",
-  "short_name": "أدمن جاز",
-  "description": "لوحة إدارة جاز للمنتجات والطلبات والعملاء",
+  "name": "أدمن جاهز",
+  "short_name": "أدمن جاهز",
+  "description": "لوحة إدارة جاهز للمنتجات والطلبات والعملاء",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./index.html?source=admin-app",
