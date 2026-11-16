@@ -14,3 +14,30 @@ body[data-scope=customer].dark .ref-referral-hero{background:#243b49}.dark .ref-
 html.jaz-native .ref-bottom-action{bottom:16px}
 @media(max-width:360px){body[data-scope=customer] .ref-product-card{aspect-ratio:.52}}
 .ref-notice-row{padding:12px 16px}.ref-notice-row h3{line-height:1.4;margin-bottom:3px}.ref-notice-row p{font-size:12px;line-height:1.5;margin-bottom:2px}.ref-notice-row time{font-size:10px;line-height:1.4}body[data-scope=customer] dialog[data-title="الملف الشخصي"]>.head{height:56px;margin-bottom:0}.ref-profile-profits>.ref-panel{padding:16px}
+
+/* Customer-requested banner, teal controls, readable dark palette and order summary. */
+body[data-scope=customer] .ref-banner{aspect-ratio:2.35}
+body[data-scope=customer] .ref-categories button[data-value=""],body[data-scope=customer] .ref-card-stock{background:linear-gradient(100deg,#063344,#075e7a);color:#fff;border-color:#075e7a}
+body[data-scope=customer] .ref-card-stock b{color:#fff}
+body[data-scope=customer].dark{filter:none;color-scheme:dark}
+body[data-scope=customer].dark img{filter:none}
+body[data-scope=customer].dark button{background:#203746;color:#eaf2f7;border-color:#466070}
+body[data-scope=customer].dark button.primary,body[data-scope=customer].dark button[aria-pressed=true]{background:#075e7a;color:#fff;border-color:#4296ac}
+body[data-scope=customer].dark .ref-setting-row,body[data-scope=customer].dark .ref-setting-row span,body[data-scope=customer].dark .ref-setting-row b{color:#eaf2f7}
+body[data-scope=customer].dark .ref-setting-row .ref-round-icon{background:#234654;color:#8bdfef}
+body[data-scope=customer].dark .price,body[data-scope=customer].dark .ref-section-title,body[data-scope=customer].dark .ref-choice-rows>button{color:#eaf2f7}
+body[data-scope=customer].dark .ref-choice-rows>button{background:transparent}
+.ref-order-card{background:#fff;border:1px solid #e0ebef;border-radius:20px;padding:18px;margin:14px 0;box-shadow:0 6px 18px #16334906}
+.ref-order-card>header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ref-order-card>header>b{font-size:20px;color:#173e4d;overflow-wrap:anywhere}
+.ref-order-status{padding:5px 12px;border-radius:24px;font-size:12px;font-weight:800;background:#fff4db;color:#826122}
+.ref-order-status.complete{background:#e1f5e9;color:#276c4a}.ref-order-status.cancelled{background:#fbe8e8;color:#9a4040}.ref-order-status.progress{background:#e2f1fa;color:#21617f}
+.ref-order-chips{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 10px}.ref-order-chips>span{border-radius:20px;background:#eef4f6;padding:3px 11px;color:#516c79;font-size:12px}
+.ref-order-card h3{font-size:16px;margin:8px 0}.ref-order-contact{text-align:start;color:var(--soft-ink);margin:8px 0}.ref-order-address{font-size:13px;color:var(--soft-ink);overflow-wrap:anywhere}
+.ref-order-total,.ref-order-profit{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:15px;border-radius:14px;margin:12px 0;background:#e4f1f0;color:#1e5961}
+.ref-order-total b,.ref-order-profit b{font-size:20px;white-space:nowrap}.ref-order-profit{background:#eaf5ed;color:#2c6a49}.ref-order-profit small{flex-basis:100%;font-size:11px;line-height:1.8}
+.ref-order-card>.primary{width:100%;background:linear-gradient(100deg,#063344,#075e7a);color:#fff;min-height:48px;font-size:17px}.ref-order-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.ref-order-actions>button{flex:1;min-width:110px;font-size:13px}.ref-order-actions>[data-act=cancelOrder]{color:#9a4d4d;border-color:#dfc7c7;background:transparent}
+body[data-scope=customer].dark .ref-order-card{background:#1a2b38;border-color:#344b5b}body[data-scope=customer].dark .ref-order-card>header>b{color:#eaf2f7}
+body[data-scope=customer].dark .ref-order-chips>span{background:#263d4d;color:#c4d8e4}body[data-scope=customer].dark .ref-order-total{background:#214550;color:#c5eff4}body[data-scope=customer].dark .ref-order-profit{background:#234337;color:#c5ecd1}
+
+body[data-scope=customer] .ref-reels-entry{background:linear-gradient(100deg,#063344,#075e7a);color:#fff}

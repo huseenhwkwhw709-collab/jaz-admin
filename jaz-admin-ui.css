@@ -1,4 +1,4 @@
-@font-face{font-family:Cairo;src:url('./fonts/Cairo.ttf') format('truetype');font-weight:200 1000;font-style:normal;font-display:swap}
+@font-face{font-family:Cairo;src:url('./fonts/Cairo-Upright.ttf') format('truetype');font-weight:200 1000;font-style:normal;font-display:swap}
 /* Shared administration system; intentionally scoped to the admin entry point. */
 :root{--admin-ink:#163444;--admin-muted:#607b8b;--admin-line:#dce8ef;--admin-bg:#f1f6fa;--admin-blue:#075e7a;--admin-soft:#eaf4f8;--admin-yellow:#f6cc49;--admin-shadow:0 5px 20px #123c4e08,0 1px 3px #123c4e05}
 html{background:var(--admin-bg);color:var(--admin-ink);font-family:Cairo,Tahoma,sans-serif;font-size:13px}
@@ -41,3 +41,5 @@ dialog{border:1px solid #dce7ee;border-radius:20px;max-height:91dvh;box-shadow:0
  .settings-save{position:sticky;bottom:78px;z-index:5;background:#fffffff5;backdrop-filter:blur(10px);border:1px solid #dce8ef;border-radius:13px;padding:12px;box-shadow:0 3px 20px #123c4e0d;gap:7px}.settings-save button{min-height:46px}.settings-save span{font-size:10px}.dialog-body{padding-bottom:max(20px,env(safe-area-inset-bottom))}dialog .form-footer{position:sticky;bottom:0;background:#fff;padding-block:14px;margin-top:20px;z-index:2}dialog .form-footer button{min-height:46px}#push-controls{display:flex;flex-direction:column;gap:10px}#push-controls button{min-height:44px}.admin-login{margin-top:6vh;margin-bottom:28px}.admin-login input{font-size:24px}
 }
 @media print{.admin-mobile-nav,.admin-install-button{display:none!important}}
+
+body[data-scope=admin],body[data-scope=admin] *{font-style:normal;font-synthesis:none;font-variation-settings:"slnt" 0}
