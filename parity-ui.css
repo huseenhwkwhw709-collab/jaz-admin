@@ -53,7 +53,7 @@ body[data-scope=customer] .launch-logo{border-radius:24%;overflow:hidden;isolati
 .ref-password-hint{display:block;font-size:11px;color:var(--soft-ink);margin-top:5px}
 
 /* Keep stock directly below the price, away from the bottom navigation. */
-body[data-scope=customer] .ref-card-stock{margin-top:2px;margin-bottom:10px;flex:none;min-height:42px;justify-content:center}body[data-scope=customer] .ref-card-stock b{font-size:17px;line-height:1.25}
+body[data-scope=customer] .ref-card-stock{margin-top:2px;margin-bottom:0;flex:none;min-height:42px;justify-content:center}body[data-scope=customer] .ref-card-stock b{font-size:17px;line-height:1.25}
 
 /* Fit product cards to their content instead of reserving empty space below stock. */
-body[data-scope=customer] .ref-product-card .ref-card-copy{flex:none;min-height:0}
+body[data-scope=customer] .ref-product-card .ref-card-copy{flex:none;min-height:0;padding-bottom:8px}
