@@ -57,3 +57,13 @@ body[data-scope=customer] .ref-card-stock{margin-top:2px;margin-bottom:0;flex:no
 
 /* Fit product cards to their content instead of reserving empty space below stock. */
 body[data-scope=customer] .ref-product-card .ref-card-copy{flex:none;min-height:0;padding-bottom:8px}
+
+/* Decode before revealing the web logo; native builds use their bundled launch view. */
+.launch-mark{position:relative;width:fit-content;margin:auto}
+body[data-scope=customer] .launch-logo img{opacity:0;transition:opacity .36s ease}
+body[data-scope=customer] .launch-logo img.ready{opacity:1}
+@property --launch-angle{syntax:'<angle>';inherits:false;initial-value:0deg}
+.launch-thread{position:absolute;inset:-12px;pointer-events:none;border-radius:28%;padding:2px;background:conic-gradient(from var(--launch-angle),transparent 0deg 220deg,#00d9ff 290deg,#fff 345deg,transparent 360deg);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:launch-thread-turn 1.7s linear infinite,launch-thread-breathe 1.7s ease-in-out infinite}
+@keyframes launch-thread-turn{to{--launch-angle:360deg}}
+@keyframes launch-thread-breathe{0%,100%{opacity:.15}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.launch-thread{animation:none}body[data-scope=customer] .launch-logo img{transition:none}}
