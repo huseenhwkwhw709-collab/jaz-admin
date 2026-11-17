@@ -49,3 +49,6 @@ body[data-scope=admin],body[data-scope=admin] *{font-style:normal;font-synthesis
 .admin-payout-account{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.admin-payout-account bdi{font-variant-numeric:tabular-nums;overflow-wrap:anywhere;max-width:100%}
 
 .notification-guide{line-height:2;padding-inline-start:24px;color:var(--admin-muted);font-size:13px}.notification-guide li+li{margin-top:6px}
+
+/* Owner-only staff control follows the existing responsive administration layout. */
+.staff-control-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.staff-control-fields>.actions{grid-column:1/-1}.staff-control-fields small{display:block;margin-top:5px;color:var(--soft-ink)}.staff-control-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.staff-login{margin:18px 0;text-align:start}.staff-login summary{cursor:pointer;color:var(--brand);font-weight:700;margin-bottom:12px}.staff-control-lock{max-width:520px;margin:auto}.staff-control-list .actions{flex-wrap:wrap}@media(max-width:700px){.staff-control-fields{grid-template-columns:1fr}}
